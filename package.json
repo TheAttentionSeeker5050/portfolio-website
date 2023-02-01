@@ -40,7 +40,8 @@
     "rules": {
       "indent": ["warn", 4, { "SwitchCase": 1 }],
       "quotes": ["warn", "double"],
-      "semi": ["error", "always"]
+      "semi": ["error", "always"],
+      "no-unused-vars": ["warn", { "vars": "local", "args": "none", "ignoreRestSiblings": true }]
     }
   }
 }
