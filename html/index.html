@@ -1,17 +1,93 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Boilerplate Project Folder</title>
-		<link rel="stylesheet" href="./bundle.css">
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nick Castellano</title>
+  <meta name="description" content="A light foundation for your next frontend project based on webpack.">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/index.css" />
 
-        <!-- HTML Content goes here -->
-        <!-- ... -->
+  <!-- link to font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
-        <script src="./bundle.js"></script>                
-    </body>
+</head>
+<body id="g-base" class="">
+
+  <div id="g-container" class="flex-column">
+
+    <nav id="p-nav" class="flex-row bg-beige">
+      <h1>Nick Castellano</h1>
+      <div class="menu-icon-container" id="menu-icon-container"><i class="fa-solid fa-bars fa-2x"></i></div>
+      <ul id="nav-menu" class="flex-row menu-big-screen">
+        <li><a href="/">Home</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/curriculum.html">CV</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+
+    <main id="p-main">
+      <div id="top-view" class="flex-row">
+
+          <img id="profile-picture" src="./images/pfp.png" alt="Profile picture" class="border-round-grey">
+
+          <div id="code-animation" class="flex-column ">
+            <p>function makePasta(){</p>
+            <div id="animation-field" class="m-left-25px"></div>
+            <p>}</p>
+          </div>
+
+      </div>
+      <section id="resume" class="border-round-orange">
+        I am a web developer based in Nova Scotia. My tech stack is Vanilla Javascript/HTLM/CSS, React, Express.js, Django, Flask, SQL, and MongoDB.
+      </section>
+
+      <section id="projects" class="">
+        <h4 class="cat-title">Projects</h4>
+        <div id="project-cards-container" class="flex-row flex-gap-35 flex-wrap">
+
+          <div class="project-card border-round-orange " >
+            <img src="images/project-todo-app.png" alt="">
+            <h4 class="text-orange">Todo App using React.js</h4>
+            <p>Used React.js, React Redux, React Router, Redux-Persist, and Tailwind.</p>
+          </div>
+<!-- 
+          <div class="project-card border-round-orange " >
+            <img src="/images/shelby.webp" alt="">
+            <h4 class="text-orange">Project2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ratione!</p>
+          </div>
+          
+          <div class="project-card border-round-orange " >
+            <img src="/images/shelby.webp" alt="">
+            <h4 class="text-orange">Project3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ratione!</p>
+          </div>
+
+          <div class="project-card border-round-orange " >
+            <img src="/images/shelby.webp" alt="">
+            <h4 class="text-orange">Project4</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ratione!</p>
+          </div>
+
+          <div class="project-card border-round-orange " >
+            <img src="/images/shelby.webp" alt="">
+            <h4 class="text-orange">Project5</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ratione!</p>
+          </div> -->
+
+        </div>
+      </section>
+    </main>
+
+    <footer id="p-footer" class="bg-beige">
+      <p>Made by Nicolas Castellano</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/scripts/code_animation.js"></script>
+</body>
 </html>
