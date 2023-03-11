@@ -43,6 +43,10 @@
   .justify-around {
     justify-content: space-around;
   }
+
+  .justify-center {
+    justify-content: center;
+  }
   
   .padding-y-20 {
     padding-top: 20px;
@@ -63,7 +67,6 @@
   .padding-x-30 {
     padding-left: 30px;
     padding-right: 30px;
-    
   }
   
   
@@ -73,8 +76,12 @@
   
   #g-container {
     min-height: 100vh;
-  
+
     #top-header {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 800px;
+        width: 90%;
         
         #p-nav {
             
@@ -87,5 +94,29 @@
             }
         }
         
+
+        #header-intro {
+            position: relative;
+            min-height: max-content;
+            
+            img {
+                width: 80%;
+                max-width: 400px;
+                // border-radius: 13%;
+            }
+
+            div {
+                position: absolute;
+                top: 45%;
+                left: 10%;
+
+                h2 {
+                    font-size: 1.4rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
   }

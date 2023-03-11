@@ -24,16 +24,49 @@ h1, h2, h4 {
 // global styling -----------------------------------------
 
 #g-container {
+  
   background-color: $grey-1;
   
   
-
-  #p-nav {
-
-    #nav-menu {
-
+  #top-header {
+    
+    #p-nav {
       
+      #site-title {
+        font-size: 1.6rem;
+        color: #2f5f7e;
+
+      }
+      
+      #nav-menu {
+        li {
+          a {
+            font-size: 1.3rem;
+            color: #2f5f7e;
+            text-decoration: none;
+          }
+        }
+      }
     }
+            
+
+    #header-intro {
+      text-align: right;
+      
+      
+      div {
+          text-align: left;
+          color: #2f5f7e;
+          h2 {
+              font-size: 1.4rem;
+          }
+          p {
+              font-size: 1.2rem;
+          }
+      }
+    }
+
+        
   }
 
 }

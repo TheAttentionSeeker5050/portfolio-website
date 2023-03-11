@@ -34,6 +34,28 @@ h1, h2, h4 {
 #g-container {
   background-color: #f0f0ee;
 }
+#g-container #top-header #p-nav #site-title {
+  font-size: 1.6rem;
+  color: #2f5f7e;
+}
+#g-container #top-header #p-nav #nav-menu li a {
+  font-size: 1.3rem;
+  color: #2f5f7e;
+  text-decoration: none;
+}
+#g-container #top-header #header-intro {
+  text-align: right;
+}
+#g-container #top-header #header-intro div {
+  text-align: left;
+  color: #2f5f7e;
+}
+#g-container #top-header #header-intro div h2 {
+  font-size: 1.4rem;
+}
+#g-container #top-header #header-intro div p {
+  font-size: 1.2rem;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/main.scss ***!
   \*************************************************************************************************************************************/
@@ -80,6 +102,10 @@ h1, h2, h4 {
   justify-content: space-around;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .padding-y-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -103,6 +129,31 @@ h1, h2, h4 {
 #g-container {
   min-height: 100vh;
 }
+#g-container #top-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  width: 90%;
+}
 #g-container #top-header #p-nav #nav-menu {
   list-style: none;
+}
+#g-container #top-header #header-intro {
+  position: relative;
+  min-height: max-content;
+}
+#g-container #top-header #header-intro img {
+  width: 80%;
+  max-width: 400px;
+}
+#g-container #top-header #header-intro div {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+#g-container #top-header #header-intro div h2 {
+  font-size: 1.4rem;
+}
+#g-container #top-header #header-intro div p {
+  font-size: 1.2rem;
 }
