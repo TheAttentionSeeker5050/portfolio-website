@@ -1,55 +1,40 @@
 // imports
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Raleway:wght@300;500;700&family=Roboto+Mono:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Lora:wght@500;700&family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Quicksand:wght@500;700&family=Raleway:wght@300;500;700&family=Roboto+Mono:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Work+Sans:wght@300;500;700&display=swap');
 
 // @import "./variables.scss";
 @import "variables";
 
 // global styles ---------------------------------
-.flex-row {
-  display: flex;
-  flex-direction: row;
+
+* {
+  
+  font-family: "Inconsolata", "Raleway", sans-serif;
+  font-weight: 500;
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
+h1, h2, h4 {
+  font-family: "Montserrat", "Quicksand", sans-serif;
+  font-weight: 700;
 
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
-
-.gap-25 {
-  gap: 25px;
-}
-
-.gap-35 {
-  gap: 35px;
-}
-
-.gap-45 {
-  gap: 45px;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
 
 // end global styles ---------------------------------
 
-// global layout -----------------------------------------
+// global styling -----------------------------------------
 
 #g-container {
-  min-height: 100vh;
+  background-color: $grey-1;
+  
+  
+
+  #p-nav {
+
+    #nav-menu {
+
+      
+    }
+  }
 
 }
 

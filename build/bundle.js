@@ -188,152 +188,6 @@ ansiHTML.reset()
 
 /***/ }),
 
-/***/ "./src/scripts/code_animation.js":
-/*!***************************************!*\
-  !*** ./src/scripts/code_animation.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "codeAnimation": () => (/* binding */ codeAnimation)
-/* harmony export */ });
-let codeAnimationIndex = 0;
-const CODE_ANIMATION_LENGHT = 30;
-
-// for detecting scroll events
-let oldScrollY;
-let scrollDelta = 25;
-function codeAnimation() {
-  let addRows = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-  let index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  // when the user scrolls down, each line of this array will be added to the dom
-  // this array is of lenght 29
-  let codeArray = [
-  // '<p></p>',
-  "<p>let pan = []</p>", "<p>let pot = [];</p>", "<p>let eatingPlate = [];</p>", '<p>let meatIngredients = ["raw ground beef", "seasoning", "garlic", "bbq sauce", "mustard"];</p>', '<p>let otherIngredients = [parmessan cheese", "bolognese sauce"];</p>', '<p><br></p>', '<p>// cook the pasta</p>', '<p>console.log("Turning on the stove");</p>', '<p>console.log("adding the pasta to the pot");</p>', '<p>pot.push("spagetti");</p>', '<p><br></p>', '<p>// add ingredients to the pot</p>', '<p>meatIngredients.forEach(ingredient => {</p>', '<p class="m-left-25px">pan.push(ingredient);</p>', '<p>})</p>', '<p><br></p>', '<p>// cook the meat</p>', '<p>setTimeout(function() {</p>', '<p class="m-left-25px">// ingredients already cooked</p>', '<p class="m-left-25px">console.log("Turning off the stove");</p>', '<p>}, (15*60*1000));</p>', '<p><br></p>', '<p>// taking away the prepared food</p>', '<p>pot = ["cooked pasta"];</p>', '<p>pan = ["prepared meat"];</p>', '<p><br></p>', '<p>// your favourite dish is ready</p>', '<p>eatingPlate.push(pot[0],pan[0], otherIngredients[0], otherIngredients[1]);</p>', '<p>console.log("Bon Apetit");</p>', '<p><br></p>'];
-
-  // get the dom element that contains the animated code
-  let codeDomElement = document.getElementById("animation-field");
-  if (addRows === true) {
-    codeDomElement.innerHTML += codeArray[index];
-  } else {
-    codeDomElement.removeChild(codeDomElement.lastChild);
-  }
-}
-function callbackFunction(event) {
-  event.preventDefault();
-  if (event.deltaY > 0) {
-    console.log(codeAnimationIndex);
-    // if scroll down, check if index did not surpass the limit
-    if (codeAnimationIndex < CODE_ANIMATION_LENGHT) {
-      // if it did not surpass the limit add more code to the dom element
-      codeAnimation(true, codeAnimationIndex);
-      codeAnimationIndex++;
-      codeAnimation(true, codeAnimationIndex);
-      codeAnimationIndex++;
-    } else if (codeAnimationIndex === CODE_ANIMATION_LENGHT) {
-      // enable scrolling again
-      console.log("or else");
-      document.getElementById("g-base").classList.remove("stop-scrolling");
-      document.getElementById("g-base").unbind('touchmove');
-    }
-  } else {
-    // if scroll up, check code index
-    if (codeAnimationIndex > 0) {
-      // if code animation index above 0, substract rows
-      // the screen scrolling is blocked until the end of the animation
-      codeAnimation(false);
-      codeAnimationIndex--;
-      codeAnimation(false);
-      codeAnimationIndex--;
-    }
-  }
-}
-function mobileCallbackFunction(event) {
-  document.getElementById("g-base").classList.remove("stop-scrolling");
-  // event.preventDefault()
-  if (oldScrollY === undefined) {
-    oldScrollY = event.changedTouches[0].clientY;
-  } else if (event.changedTouches[0].clientY < oldScrollY) {
-    // scrolling down
-
-    // check for a bigger change using a delta
-    if (codeAnimationIndex < CODE_ANIMATION_LENGHT) {
-      // if it did not surpass the limit add more code to the dom element
-
-      codeAnimation(true, codeAnimationIndex);
-      codeAnimationIndex++;
-    } else if (codeAnimationIndex === CODE_ANIMATION_LENGHT) {
-      // enable scrolling again
-      console.log("or else");
-      document.getElementById("g-base").classList.remove("stop-scrolling");
-    }
-  } else if (event.changedTouches[0].clientY > oldScrollY) {
-    if (codeAnimationIndex > 0) {
-      // if code animation index above 0, substract rows
-      // the screen scrolling is blocked until the end of the animation
-      codeAnimation(false);
-      codeAnimationIndex--;
-    }
-  }
-}
-function main2() {
-  document.addEventListener("mousewheel", callbackFunction);
-  document.addEventListener("touchmove", mobileCallbackFunction);
-  document.addEventListener("touchend", event => {
-    oldScrollY = undefined;
-  });
-}
-main2();
-
-/***/ }),
-
-/***/ "./src/scripts/hamburger_menu.js":
-/*!***************************************!*\
-  !*** ./src/scripts/hamburger_menu.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ hamburgerMenuDisplay)
-/* harmony export */ });
-function hamburgerMenuDisplay() {
-  let optionsMenuElement = document.getElementById("nav-menu");
-  // console.log(optionsMenuElement);
-  optionsMenuElement.classList.remove("menu-big-screen");
-  optionsMenuElement.classList.remove("flex-row");
-  optionsMenuElement.classList.add("flex-column");
-  optionsMenuElement.classList.add("menu-mobile");
-}
-
-/***/ }),
-
-/***/ "./src/scripts/hamburger_menu_not_display.js":
-/*!***************************************************!*\
-  !*** ./src/scripts/hamburger_menu_not_display.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ hamburgerMenuNotDisplay)
-/* harmony export */ });
-function hamburgerMenuNotDisplay() {
-  let optionsMenuElement = document.getElementById("nav-menu");
-  // console.log(optionsMenuElement);
-  optionsMenuElement.classList.add("menu-big-screen");
-  optionsMenuElement.classList.add("flex-row");
-  optionsMenuElement.classList.remove("flex-column");
-  optionsMenuElement.classList.remove("menu-mobile");
-}
-
-/***/ }),
-
 /***/ "./node_modules/events/events.js":
 /*!***************************************!*\
   !*** ./node_modules/events/events.js ***!
@@ -1106,6 +960,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************!*\
   !*** ./sass/index.scss ***!
   \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./sass/main.scss":
+/*!************************!*\
+  !*** ./sass/main.scss ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2960,7 +2827,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("29cffbf7cc0f54bbdefa")
+/******/ 		__webpack_require__.h = () => ("7b049e5417f790dfa63b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3323,26 +3190,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_CV_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../sass/CV.scss */ "./sass/CV.scss");
 /* harmony import */ var _sass_portfolio_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../sass/portfolio.scss */ "./sass/portfolio.scss");
 /* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../sass/styles.scss */ "./sass/styles.scss");
-/* harmony import */ var _scripts_code_animation_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scripts/code_animation.js */ "./src/scripts/code_animation.js");
-/* harmony import */ var _scripts_hamburger_menu_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scripts/hamburger_menu.js */ "./src/scripts/hamburger_menu.js");
-/* harmony import */ var _scripts_hamburger_menu_not_display_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./scripts/hamburger_menu_not_display.js */ "./src/scripts/hamburger_menu_not_display.js");
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../sass/main.scss */ "./sass/main.scss");
 
 
 
 
 
 
-// import scripts
 
+// // import scripts
+// import {codeAnimation} from './scripts/code_animation.js';
+// import hamburgerMenuDisplay from './scripts/hamburger_menu.js';
+// import hamburgerMenuNotDisplay from './scripts/hamburger_menu_not_display.js';
 
+// let codeAnimationIndex = 0;
+// const CODE_ANIMATION_LENGHT = 30;
 
-let codeAnimationIndex = 0;
-const CODE_ANIMATION_LENGHT = 30;
 function main() {
-  (0,_scripts_code_animation_js__WEBPACK_IMPORTED_MODULE_5__.codeAnimation)();
-  document.getElementsByTagName("main").item(0).addEventListener("click", _scripts_hamburger_menu_not_display_js__WEBPACK_IMPORTED_MODULE_7__["default"]);
-  document.getElementById("p-footer").addEventListener("click", _scripts_hamburger_menu_not_display_js__WEBPACK_IMPORTED_MODULE_7__["default"]);
-  document.getElementById("menu-icon-container").addEventListener("click", _scripts_hamburger_menu_js__WEBPACK_IMPORTED_MODULE_6__["default"]);
+  // codeAnimation()
+  // document.getElementsByTagName("main").item(0).addEventListener("click", hamburgerMenuNotDisplay);
+  // document.getElementById("p-footer").addEventListener("click", hamburgerMenuNotDisplay);
+  // document.getElementById("menu-icon-container").addEventListener("click", hamburgerMenuDisplay);
 }
 main();
 })();

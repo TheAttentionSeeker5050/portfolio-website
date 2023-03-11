@@ -1,0 +1,91 @@
+
+// global styles ---------------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  
+  .gap-25 {
+    gap: 25px;
+  }
+  
+  .gap-35 {
+    gap: 35px;
+  }
+  
+  .gap-45 {
+    gap: 45px;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .padding-y-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .padding-x-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  
+  .padding-y-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .padding-x-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+  
+  
+  // end global styles ---------------------------------
+  
+  // global layout -----------------------------------------
+  
+  #g-container {
+    min-height: 100vh;
+  
+    #top-header {
+        
+        #p-nav {
+            
+            #site-title {
+                
+            }
+            
+            #nav-menu {
+                list-style: none;
+            }
+        }
+        
+    }
+  }
