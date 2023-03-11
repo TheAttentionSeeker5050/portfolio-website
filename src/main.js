@@ -1,5 +1,11 @@
 
 
+import "./../sass/index.scss"
+import "./../sass/contact.scss"
+import "./../sass/CV.scss"
+import "./../sass/portfolio.scss"
+import "./../sass/styles.scss"
+
 
 // import scripts
 import {codeAnimation} from './scripts/code_animation.js';
@@ -10,11 +16,10 @@ let codeAnimationIndex = 0;
 const CODE_ANIMATION_LENGHT = 30;
 
 function main() {
-
+    codeAnimation()
     document.getElementsByTagName("main").item(0).addEventListener("click", hamburgerMenuNotDisplay);
     document.getElementById("p-footer").addEventListener("click", hamburgerMenuNotDisplay);
     document.getElementById("menu-icon-container").addEventListener("click", hamburgerMenuDisplay);
-
 
 }
 

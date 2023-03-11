@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nick Castellano - Portfolio</title>
   <meta name="description" content="A light foundation for your next frontend project based on webpack.">
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/portfolio.css" />
+  <link rel="stylesheet" href="./bundle.css" />
+
 
   <!-- link to font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -29,6 +29,7 @@
     
     <main id="p-portfolio" class="flex-column flex-nowrap">
       <h2 class="text-orange">Project Portfolio</h2>
+      
       <section class="portfolio-element border-round-orange flex-column">
         <h4 class="text-orange">Todo App using React.js</h4>
         <img src="images/project-todo-app.png" alt="" >
@@ -36,17 +37,49 @@
           Used React.js, React Redux, React Router, Redux-Persist, and Tailwind. This app also consists of a web server made using Node.js Mongo.js, Web Tokens and Express.js.
         </p>
         <br>
-        <p>Open the project in the following <a href="https://todo-app.nicolas-castellano.com/">link</a></p>
+        <p>Open the project in the following <a href="https://todo-app.nicolas-castellano.com/" target="_blank">link</a></p>
         
       </section>
 
-      <!-- <section class="portfolio-element border-round-orange flex-column">
-        <h4 class="text-orange">Project 2</h4>
-        <img src="images/shelby.webp" alt="" >
+      <section class="portfolio-element border-round-orange flex-column">
+        <h4 class="text-orange">Giphy API Explorer</h4>
+        <img src="images/giphy-api-explorer.png" alt="Facts About Numbers Web App" >
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus doloremque provident, ipsa vel earum debitis assumenda pariatur sit perferendis adipisci, minus quo! Perferendis at autem enim aperiam vero. Blanditiis nemo quo nihil impedit cum ea amet repellendus aliquid eligendi dolor, natus nobis, totam ipsum, culpa rerum maxime similique. Minima aliquam eaque consequuntur necessitatibus nulla! Minima consequuntur eaque atque praesentium assumenda veritatis, illum ea suscipit ad aspernatur explicabo neque ipsum provident amet quaerat placeat, velit sunt ipsa porro delectus tempore officiis culpa, ut non! Inventore, labore maiores nostrum ex architecto quisquam facere, accusamus magni cupiditate minus vitae quas quidem laborum.
+          This application was made using Vue.js, the Vite Vue builder, Javasctipt Fecth API, SASS and External fonts from Icons8.com
         </p>
-        <p>Open the project in the following <a href="">link</a></p> -->
+        <br>
+        <p>Open the project in the following <a href="https://giphy-api-explorer.nicolas-castellano.com/" target="_blank">link</a></p>
+        
+      </section>
+
+      <section class="portfolio-element border-round-orange flex-column">
+        <h4 class="text-orange">Joke Generator API Client</h4>
+        <img src="images/joke-generator-app.png" alt="Joke Generator Web App" >
+        <p>
+          Used vanilla Javascript, SASS, HTML, Fetch.js and webpack to create a frontend for the Joke Generator API.
+        </p>
+        <br>
+        <p>Open the project in the following <a href="https://joke-generator.nicolas-castellano.com/" target="_blank">link</a></p>
+        
+      </section>
+
+      <section class="portfolio-element border-round-orange flex-column">
+        <h4 class="text-orange">Facts About Numbers API Client</h4>
+        <img src="images/random-facts-numbers-app.png" alt="Facts About Numbers Web App" >
+        <p>
+          Used vanilla Javascript, SASS, HTML, Fetch.js and webpack to create a frontend for the Facts About Numbers API. It receives a number as an input and provides a fact about said number.
+        </p>
+        <br>
+        <p>Open the project in the following <a href="https://random-facts-numbers.nicolas-castellano.com/" target="_blank">link</a></p>
+        
+      </section>
+
+      
+
+
+    
+
+
         
       </section>
 
@@ -58,7 +91,8 @@
     </footer>
   </div>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./bundle.js"></script>
+
 
 </body>
 </html>

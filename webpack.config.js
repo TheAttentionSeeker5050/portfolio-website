@@ -97,6 +97,9 @@ module.exports = {
                 {from:'lib/', to:'', noErrorOnMissing: true},
                 // copies HTML file to /build
                 {from:'html/index.html', to:'index.html'},
+                {from:'html/portfolio.html', to:'portfolio.html'},
+                {from:'html/curriculum.html', to:'curriculum.html'},
+                {from:'html/contact.html', to:'contact.html'},
             ]
         })
     ]
