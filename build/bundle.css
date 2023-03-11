@@ -1,0 +1,209 @@
+/*!***************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/styles.scss ***!
+  \***************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Raleway:wght@300;500;700&family=Roboto+Mono:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap);
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/index.scss ***!
+  \**************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/contact.scss ***!
+  \****************************************************************************************************************************************/
+.form-50-percent-div {
+  width: 45%;
+}
+
+#g-container #p-contact {
+  padding: 35px;
+}
+#g-container #p-contact #contact-form-section {
+  padding: 45px;
+  max-width: 800px;
+  width: 70%;
+  margin: auto;
+}
+#g-container #p-contact #contact-form-section form {
+  gap: 20px;
+}
+#g-container #p-contact #contact-form-section form h2 {
+  text-align: center;
+}
+#g-container #p-contact #contact-form-section form h2 i {
+  color: #343a40;
+  margin-left: 20px;
+}
+#g-container #p-contact #contact-form-section form #form-top-input-container {
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  #g-container #p-contact #contact-form-section form #form-top-input-container {
+    flex-direction: column;
+  }
+}
+#g-container #p-contact #contact-form-section form #form-lower-input-container, #g-container #p-contact #contact-form-section form #form-top-input-container div {
+  gap: 10px;
+}
+@media (max-width: 500px) {
+  #g-container #p-contact #contact-form-section form #form-lower-input-container, #g-container #p-contact #contact-form-section form #form-top-input-container div {
+    width: 100%;
+  }
+}
+#g-container #p-contact #contact-form-section form #form-lower-input-container input, #g-container #p-contact #contact-form-section form #form-top-input-container div input {
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+#g-container #p-contact #contact-form-section form #form-lower-input-container textarea, #g-container #p-contact #contact-form-section form #form-top-input-container div textarea {
+  height: 150px;
+  text-align: justify;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+}
+#g-container #p-contact #contact-form-section form button {
+  background-color: #bb3e03;
+  color: white;
+  border: #343a40 solid 2px;
+  padding: 10px 55px;
+  width: max-content;
+  border-radius: 15px;
+  align-self: center;
+  font-size: 1rem;
+}
+#g-container #p-contact #socials-section {
+  padding-left: 15px;
+}
+#g-container #p-contact #socials-section ul {
+  list-style: none;
+}
+#g-container #p-contact #socials-section ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+#g-container #p-contact #socials-section ul li i {
+  color: black;
+}
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/CV.scss ***!
+  \***********************************************************************************************************************************/
+#g-container #p-cv {
+  width: 85%;
+  align-self: center;
+  margin: 35px 0;
+}
+#g-container #p-cv section ul {
+  margin-left: 15px;
+}
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/portfolio.scss ***!
+  \******************************************************************************************************************************************/
+#g-container #p-portfolio {
+  padding: 20px 0;
+}
+@media (max-width: 1100px) {
+  #g-container #p-portfolio {
+    padding: 60px;
+  }
+}
+@media (max-width: 500px) {
+  #g-container #p-portfolio {
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+#g-container #p-portfolio h2 {
+  text-align: center;
+}
+#g-container #p-portfolio .portfolio-element {
+  width: 65%;
+  max-width: 850px;
+  text-align: justify;
+  padding: 20px;
+  margin: 30px;
+  align-self: center;
+}
+@media (max-width: 1100px) {
+  #g-container #p-portfolio .portfolio-element {
+    padding: 30px;
+    margin: 30px 0;
+    max-width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  #g-container #p-portfolio .portfolio-element {
+    padding: 20px;
+    margin: 30px;
+  }
+}
+#g-container #p-portfolio .portfolio-element img {
+  max-height: 600px;
+  margin: 20px auto;
+  max-width: 90%;
+}
+#g-container #p-portfolio .portfolio-element h4 {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 1.4rem;
+}
+@media (max-width: 1100px) {
+  #g-container #p-portfolio .portfolio-element p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  #g-container #p-portfolio .portfolio-element p {
+    font-size: 1.1rem;
+  }
+}
+#g-container #p-portfolio .portfolio-element p a {
+  color: #bb3e03;
+  text-decoration: none;
+}
+#g-container #p-portfolio .portfolio-element p a:hover {
+  color: #fca311;
+}
+/*!*******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/styles.scss (1) ***!
+  \*******************************************************************************************************************************************/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-35 {
+  gap: 35px;
+}
+
+.gap-45 {
+  gap: 45px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+#g-container {
+  min-height: 100vh;
+}
