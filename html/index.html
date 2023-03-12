@@ -42,7 +42,7 @@
         <!-- <div class="menu-icon-container" id="menu-icon-container"><i class="fa-solid fa-bars fa-2x"></i></div> -->
       </nav>
       
-      <section id="header-intro" class="flex-row flex-wrap justify-around">
+      <section id="header-intro" class="flex-row flex-wrap justify-around gap-35">
         <div>
           <h2>Web Developer</h2>
           <p>Javascript - Python - React - Node.js</p>
@@ -151,7 +151,7 @@
 
       <section id="connect-section" class="padding-y-30 padding-x-20 flex-col gap-35">
         <h4 class="main-section-title">Contact Me</h4>
-        <form action="https://formspree.io/f/xgeboqve" method="post" class="flex-col flex-wrap gap-25">
+        <form action="https://formspree.io/f/xgeboqve" method="post" id="contact-form" class="flex-col flex-wrap gap-25">
           <div id="form-top-input-container" class="flex-row flex-wrap gap-25 justify-around">
             <div class="flex-row gap-25 form-control">
               <label for="name">Full Name:</label>
@@ -169,8 +169,13 @@
             <textarea name="message" id="message:" cols="30" rows="10" placeholder="Type the contents of the message here..." required></textarea>
           </div>
 
+          <div id="form-validation-msg-container">
+            <p id="form-message-char-counter">Number of Characters: 0/800</p>
+            <p id="form-error-display"></p>
+          </div>
+
           <div class="flex-col flex-wrap submit-control justify-center padding-y-20 ">
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit-btn">Submit</button>
           </div>
         </form>
 
