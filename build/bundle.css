@@ -26,21 +26,45 @@
   font-weight: 500;
 }
 
-h1, h2, h4 {
+h1, h2, h4, h6 {
   font-family: "Montserrat", "Quicksand", sans-serif;
   font-weight: 700;
 }
 
-#g-container {
+.color-title {
+  color: #2f5f7e;
+}
+
+.color-p {
+  color: black;
+}
+
+.color-bg {
   background-color: #e5e5e2;
 }
+
+.color-main-bg {
+  background-color: white;
+}
+
+h1, h2, h4, h6, a {
+  color: #2f5f7e;
+}
+
+p {
+  color: black;
+  font-size: 1.18rem;
+}
+
+.fontawesome-icon {
+  color: #2f5f7e;
+}
+
 #g-container #top-header #p-nav #site-title {
   font-size: 1.6rem;
-  color: #2f5f7e;
 }
 #g-container #top-header #p-nav #nav-menu li a {
   font-size: 1.3rem;
-  color: #2f5f7e;
   text-decoration: none;
 }
 #g-container #top-header #header-intro {
@@ -48,24 +72,13 @@ h1, h2, h4 {
 }
 #g-container #top-header #header-intro div {
   text-align: left;
-  color: #2f5f7e;
 }
 #g-container #top-header #header-intro div h2 {
   font-size: 1.4rem;
 }
-#g-container #top-header #header-intro div p {
-  font-size: 1.2rem;
-}
-#g-container #p-main {
-  background-color: white;
-}
 #g-container #p-main h2 {
   font-size: 1.6rem;
-  color: #2f5f7e;
   text-align: center;
-}
-#g-container #p-main .main-section-title, #g-container #p-main .card-title {
-  color: #2f5f7e;
 }
 #g-container #p-main .main-section-title {
   font-size: 1.3rem;
@@ -78,12 +91,7 @@ h1, h2, h4 {
   text-align: center;
 }
 #g-container #p-main .card-description {
-  font-size: 1.1rem;
-  color: black;
   text-align: justify;
-}
-#g-container #p-main .card-logo {
-  color: #2f5f7e;
 }
 #g-container #p-main #connect-section form textarea, #g-container #p-main #connect-section form input, #g-container #p-main #connect-section form label, #g-container #p-main #connect-section form button {
   font-size: 1.3rem;
@@ -100,47 +108,33 @@ h1, h2, h4 {
 }
 #g-container #p-main .portfolio-item h4 {
   text-align: center;
-  color: #2f5f7e;
   font-size: 1.3rem;
-}
-#g-container #p-main .portfolio-item p {
-  font-size: 1.18rem;
-}
-#g-container #p-footer {
-  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   /* Dark theme styles go here */
-  #g-container {
+  .color-bg {
     background-color: #343a40;
   }
-  #g-container #top-header #p-nav #site-title {
-    color: #ffbe0b;
-  }
-  #g-container #top-header #p-nav #nav-menu li a {
-    color: #ffbe0b;
-  }
-  #g-container #top-header #header-intro div h2 {
-    color: #ffbe0b;
-  }
-  #g-container #top-header #header-intro div p {
-    color: #e5e5e2;
-  }
-  #g-container #p-main {
+
+  .color-main-bg {
     background-color: #343a40;
   }
-  #g-container #p-main .main-section-title, #g-container #p-main .card-title {
+
+  h1, h2, h4, h6, a {
     color: #ffbe0b;
   }
-  #g-container #p-main .card-description {
+
+  p {
     color: white;
   }
+
+  .fontawesome-icon {
+    color: #ffbe0b;
+  }
+
   #g-container #p-main .skill-card, #g-container #p-main .skill-stripe {
     background-color: #6c757d;
-  }
-  #g-container #p-main .card-logo {
-    color: #ffbe0b;
   }
   #g-container #p-main #connect-section form label {
     color: #e5e5e2;
@@ -154,8 +148,9 @@ h1, h2, h4 {
     background-color: #ffbe0b;
     color: black;
   }
-  #g-container #p-footer {
-    color: #e5e5e2;
+  #g-container #p-main .portfolio-item {
+    border: 2px solid white;
+    background-color: #6c757d;
   }
 }
 /*!*************************************************************************************************************************************!*\
@@ -252,6 +247,9 @@ h1, h2, h4 {
 #g-container #top-header #p-nav #nav-menu {
   list-style: none;
 }
+#g-container #top-header #p-nav #nav-menu li {
+  margin: auto 0;
+}
 #g-container #top-header #header-intro {
   min-height: max-content;
 }
@@ -276,7 +274,7 @@ h1, h2, h4 {
   margin-right: auto;
 }
 #g-container #p-main #skillset-card-wrapper .skill-card {
-  max-width: 330px;
+  max-width: 300px;
   width: 85%;
   border-radius: 10px;
 }
@@ -307,15 +305,16 @@ h1, h2, h4 {
 }
 #g-container #p-main .portfolio-item {
   max-width: 900px;
-  width: 85%;
+  width: 80%;
   margin: auto;
-  padding: 35px;
+  padding: 20px;
   border-radius: 14px;
 }
 #g-container #p-main .portfolio-item img {
   max-width: 700px;
   width: 80%;
   margin: auto;
+  border-radius: 8px;
 }
 #g-container #p-footer {
   text-align: center;

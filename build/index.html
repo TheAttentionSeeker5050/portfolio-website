@@ -15,7 +15,7 @@
 </head>
 <body id="g-base" class="">
 
-  <div id="g-container" class="flex-col justify-between">
+  <div id="g-container" class="flex-col justify-between color-bg">
 
     <header id="top-header" class="flex-col flex-nowrap justify-evenly padding-y-30 ">
 
@@ -26,7 +26,18 @@
           <li><a href="./portfolio.html">Portfolio</a></li>
           <!-- <li><a href="./curriculum.html">CV</a></li> -->
           <!-- <li><a href="./contact.html">Contact</a></li> -->
-          <!-- <li id="social-media-links"></li> -->
+          <li id="social-media-links" class="flex-row flex-wrap gap-25">
+            <!-- <div id="social-media-container" class="flex-row flex-wrap gap-25"> -->
+              <a href="https://www.linkedin.com/in/nicolas-castellano-dev/" target="_blank">
+                <i class="font-awesome-icon fa-brands fa-linkedin fa-2x"></i>
+              </a>
+    
+              <a href="https://github.com/TheAttentionSeeker5050" target="_blank">
+                <i class="fontawesome-icon fa-brands fa-linkedin-in fa-2x"></i>
+              </a>
+    
+            <!-- </div> -->
+          </li>
         </ul>
         <!-- <div class="menu-icon-container" id="menu-icon-container"><i class="fa-solid fa-bars fa-2x"></i></div> -->
       </nav>
@@ -41,7 +52,7 @@
 
     </header>
 
-    <main id="p-main" class="padding-y-30">
+    <main id="p-main" class="padding-y-30 color-main-bg">
 
       <section id="skill-set-section" class="flex-col flex-nowrap gap-35 padding-y-20">
         <h4 class="main-section-title">My Skills</h4>
@@ -49,7 +60,7 @@
         <div id="skillset-card-wrapper" class="flex-row flex-wrap gap-35 justify-evenly  padding-y-20 padding-x-30">
 
           <div class="skill-card flex-col padding-y-30 padding-x-20 gap-25" >
-            <i class="card-logo fa-solid fa-code fa-2x"></i>
+            <i class="fontawesome-icon card-logo fa-solid fa-code fa-2x"></i>
             <h6 class="card-title">Javascript, CSS, HTML</h6>
             <p class="card-description">
               Designing and coding responsive websites using Vanilla Javascript, CSS, and HTML. From static websites to adding extra functionalities such as Fetch API, input validation, Localstorage, animations, or third party libraries such as font-awesome. Can be served with bundlers such as webpack.
@@ -57,7 +68,7 @@
           </div>
 
           <div class="skill-card flex-col padding-y-30 padding-x-20 gap-25" >
-            <i class="card-logo fa-brands fa-python fa-2x"></i>
+            <i class="fontawesome-icon card-logo fa-brands fa-python fa-2x"></i>
             <h6 class="card-title">Python, Django, Flask Web Services</h6>
             <p class="card-description">
               Designing and coding CLI programs in python such as selenium bots, as well as web services using Django and Flask. From server-side rendered websites to Full Stack API services with authentication, testing, validation, databases using the best practices.
@@ -65,7 +76,7 @@
           </div>
 
           <div class="skill-card flex-col padding-y-30 padding-x-20 gap-25" >
-            <i class="card-logo fa-brands fa-react fa-2x"></i>
+            <i class="fontawesome-icon card-logo fa-brands fa-react fa-2x"></i>
             <h6 class="card-title">React.js Web Apps</h6>
             <p class="card-description">
               Designing and coding web apps using the React.js framework. From simpler sites to Dynamic SPA's adding state management using Redux, advanced input validation libraries, testing, CSS frameworks such as Bootstrap and tailwind. 
@@ -73,7 +84,7 @@
           </div>
 
           <div class="skill-card flex-col padding-y-30 padding-x-20 gap-25" >
-            <i class="card-logo fa-brands fa-node-js fa-2x"></i>
+            <i class="fontawesome-icon card-logo fa-brands fa-node-js fa-2x"></i>
             <h6 class="card-title">Node.js and Express.js Web Services</h6>
             <p class="card-description">
               Designing and coding web services using Express.js. From simpler API endpoints to Full Stack websites or API endpoints, with advanced authentication, validation, security practices implemented, databases, and media storage.
@@ -81,7 +92,7 @@
           </div>
 
           <div class="skill-card flex-col padding-y-30 padding-x-20 gap-25" >
-            <i class="card-logo fa-solid fa-server fa-2x"></i>
+            <i class="fontawesome-icon card-logo fa-solid fa-server fa-2x"></i>
             <h6 class="card-title">Web Service Cloud Deployment</h6>
             <p class="card-description">
               Designing and coding web services using Express.js. From simpler API endpoints to Full Stack websites or API endpoints, with advanced authentication, validation, security practices implemented, databases, and media storage.
@@ -89,7 +100,7 @@
           </div>
 
           <div class="skill-card flex-col padding-y-30 padding-x-20 gap-25" >
-            <i class="card-logo fa-solid fa-database fa-2x"></i>
+            <i class="fontawesome-icon card-logo fa-solid fa-database fa-2x"></i>
             <h6 class="card-title">Web Service Cloud Deployment</h6>
             <p class="card-description">
               Designing and setting up SQL and noSQL databases using MongoDB, Mysql, SQLite, PostgreSQL and connect them to web services and apps.
@@ -141,7 +152,7 @@
       <section id="connect-section" class="padding-y-30 padding-x-20 flex-col gap-35">
         <h4 class="main-section-title">Contact Me</h4>
         <form action="https://formspree.io/f/xgeboqve" method="post" class="flex-col flex-wrap gap-25">
-          <div id="form-top-input-container" class="flex-row flex-wrap justify-between">
+          <div id="form-top-input-container" class="flex-row flex-wrap gap-25 justify-around">
             <div class="flex-row gap-25 form-control">
               <label for="name">Full Name:</label>
               <input type="text" name="name" id="name" required autocomplete="name">
@@ -167,6 +178,17 @@
 
       <section id="social-media-section" class="padding-y-20">
         <h4 class="main-section-title">Follow Me on Social Media</h4>
+
+        <div id="social-media-container" class="flex-row flex-wrap justify-center padding-y-30 gap-25">
+          <a href="https://www.linkedin.com/in/nicolas-castellano-dev/" target="_blank">
+            <i class="font-awesome-icon fa-brands fa-linkedin fa-2x"></i>
+          </a>
+
+          <a href="https://github.com/TheAttentionSeeker5050" target="_blank">
+            <i class="fontawesome-icon fa-brands fa-linkedin-in fa-2x"></i>
+          </a>
+
+        </div>
 
       </section>
 

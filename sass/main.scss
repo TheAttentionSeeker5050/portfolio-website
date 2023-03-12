@@ -97,12 +97,13 @@
         
         #p-nav {
             
-            #site-title {
-                
-            }
             
             #nav-menu {
-                list-style: none;
+              list-style: none;
+              
+              li {
+                margin: auto 0;
+              }
             }
         }
         
@@ -139,7 +140,7 @@
             margin-right: auto;
 
             .skill-card {
-                max-width: 330px;
+                max-width: 300px;
                 width: 85%;
                 border-radius: 10px;
             }
@@ -157,6 +158,9 @@
             margin: 0 auto;
 
             form {
+
+              
+
               textarea, input {
                 border-radius: 8px;
                 padding: 10px;
@@ -185,9 +189,9 @@
 
         .portfolio-item {
             max-width: 900px;
-            width: 85%;
+            width: 80%;
             margin: auto;
-            padding: 35px;
+            padding: 20px;
             border-radius: 14px;
 
             
@@ -196,7 +200,7 @@
                 max-width: 700px;
                 width: 80%;
                 margin: auto;
-
+                border-radius: 8px;
             }
         }
         

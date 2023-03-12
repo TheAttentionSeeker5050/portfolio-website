@@ -13,11 +13,40 @@
 }
 
 
-h1, h2, h4 {
+h1, h2, h4, h6 {
   font-family: "Montserrat", "Quicksand", sans-serif;
   font-weight: 700;
-
 }
+
+.color-title {
+  color: $dark-blue-1;
+}
+
+.color-p {
+  color: black;
+}
+
+.color-bg {
+  background-color: $grey-1;
+}
+
+.color-main-bg {
+  background-color: white;
+}
+
+h1, h2, h4, h6, a {
+  color: $dark-blue-1;
+}
+
+p {
+  color: black;
+  font-size: 1.18rem;
+}
+
+.fontawesome-icon {
+  color: $dark-blue-1;
+}
+
 
 // end global styles ---------------------------------
 
@@ -27,7 +56,6 @@ h1, h2, h4 {
 
 #g-container {
   
-  background-color: $grey-1;
   
   
   #top-header {
@@ -36,15 +64,12 @@ h1, h2, h4 {
       
       #site-title {
         font-size: 1.6rem;
-        color: #2f5f7e;
-
       }
       
       #nav-menu {
         li {
           a {
             font-size: 1.3rem;
-            color: #2f5f7e;
             text-decoration: none;
           }
         }
@@ -58,12 +83,8 @@ h1, h2, h4 {
       
       div {
           text-align: left;
-          color: #2f5f7e;
           h2 {
               font-size: 1.4rem;
-          }
-          p {
-              font-size: 1.2rem;
           }
       }
     }  
@@ -71,17 +92,13 @@ h1, h2, h4 {
 
   #p-main {
 
-    background-color: white;
 
     h2 {
       font-size: 1.6rem;
-      color: $dark-blue-1;
       text-align: center;
     }
 
-    .main-section-title, .card-title {
-      color: $dark-blue-1;
-    }
+    
 
     .main-section-title {
       font-size: 1.3rem;
@@ -96,14 +113,10 @@ h1, h2, h4 {
     }
 
     .card-description {
-      font-size: 1.10rem;
-      color: black;
       text-align: justify;
     }
 
-    .card-logo {
-      color: $dark-blue-1;
-    }
+    
 
     #connect-section {
 
@@ -132,24 +145,13 @@ h1, h2, h4 {
 
       h4 {
           text-align: center;
-          color: $dark-blue-1;
           font-size: 1.3rem;
       }
 
-      p {
-        font-size: 1.18rem;
-      }
-
-      
+    }
+    
   }
 
-
-
-  }
-
-  #p-footer {
-    color: black;
-  }
 
 }
 
@@ -159,64 +161,39 @@ h1, h2, h4 {
 // color theme
 @media (prefers-color-scheme: dark) {
   /* Dark theme styles go here */
+
+  .color-bg {
+    background-color: $grey-3;
+  }
+  
+  .color-main-bg {
+    background-color: $grey-3;
+  }
+  
+  h1, h2, h4, h6, a {
+    color: $orange-1;
+  }
+  
+  p {
+    color: white;
+  }
+
+  .fontawesome-icon {
+    color: $orange-1;
+  }
+
   #g-container {
-      background-color: $grey-3;
       
-      #top-header {
-    
-        #p-nav {
-          
-          #site-title {
-            color: $orange-1;
-          }
-          
-          #nav-menu {
-            li {
-              a {
-                color: $orange-1;
-              }
-            }
-          }
-        }
-                
-    
-        #header-intro {
-          div {
-            h2 {
-              color: $orange-1;
-            }
+      
 
-            p {
-              color: $grey-1;
-            }
-          }
-        }
-
+    #p-main {
         
+    
+      .skill-card, .skill-stripe {
+        background-color: $grey-2;
       }
 
-      #p-main {
-        background-color: $grey-3;
-
-        
-
-        .main-section-title, .card-title {
-          color: $orange-1;
-        }
-    
-        .card-description {
-          color: white;
-        }
-    
-        .skill-card, .skill-stripe {
-          background-color: $grey-2;
-        }
-
-        .card-logo {
-          color: $orange-1;
-        }
-
-        #connect-section {
+      #connect-section {
 
         form {
           
@@ -238,16 +215,14 @@ h1, h2, h4 {
             }
           }
         }
+      }
 
-        
-
+      .portfolio-item {
+        border: 2px solid white;
+        background-color: $grey-2;
       }
 
     }
 
-    #p-footer {
-      color: $grey-1;
-    }
-      
   }
 }

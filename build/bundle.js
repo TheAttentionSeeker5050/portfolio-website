@@ -8835,7 +8835,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("8753fd898253cceff0ee")
+/******/ 		__webpack_require__.h = () => ("b00408b222b4073bf663")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -9219,19 +9219,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // // import scripts
-// import {codeAnimation} from './scripts/code_animation.js';
-// import hamburgerMenuDisplay from './scripts/hamburger_menu.js';
-// import hamburgerMenuNotDisplay from './scripts/hamburger_menu_not_display.js';
 
-// let codeAnimationIndex = 0;
-// const CODE_ANIMATION_LENGHT = 30;
-
-function main() {
-  // codeAnimation()
-  // document.getElementsByTagName("main").item(0).addEventListener("click", hamburgerMenuNotDisplay);
-  // document.getElementById("p-footer").addEventListener("click", hamburgerMenuNotDisplay);
-  // document.getElementById("menu-icon-container").addEventListener("click", hamburgerMenuDisplay);
-}
+function main() {}
 main();
 })();
 
