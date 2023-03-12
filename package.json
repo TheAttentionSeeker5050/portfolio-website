@@ -38,10 +38,32 @@
       "sourceType": "module"
     },
     "rules": {
-      "indent": ["warn", 4, { "SwitchCase": 1 }],
-      "quotes": ["warn", "double"],
-      "semi": ["error", "always"],
-      "no-unused-vars": ["warn", { "vars": "local", "args": "none", "ignoreRestSiblings": true }]
+      "indent": [
+        "warn",
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "quotes": [
+        "warn",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-unused-vars": [
+        "warn",
+        {
+          "vars": "local",
+          "args": "none",
+          "ignoreRestSiblings": true
+        }
+      ]
     }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0"
   }
 }

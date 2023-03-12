@@ -24,6 +24,10 @@
     flex-wrap: nowrap;
   }
   
+  .gap-15 {
+    gap: 15px;
+  }
+
   .gap-25 {
     gap: 25px;
   }
@@ -39,6 +43,10 @@
   .justify-between {
     justify-content: space-between;
   }
+
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
   
   .justify-around {
     justify-content: space-around;
@@ -46,6 +54,10 @@
 
   .justify-center {
     justify-content: center;
+  }
+
+  .justify-top {
+    justify-content: flex-start;
   }
   
   .padding-y-20 {
@@ -80,7 +92,7 @@
     #top-header {
         margin-right: auto;
         margin-left: auto;
-        max-width: 800px;
+        max-width: 1000px;
         width: 90%;
         
         #p-nav {
@@ -96,27 +108,105 @@
         
 
         #header-intro {
-            position: relative;
             min-height: max-content;
             
             img {
                 width: 80%;
                 max-width: 400px;
-                // border-radius: 13%;
             }
 
             div {
-                position: absolute;
-                top: 45%;
-                left: 10%;
+                align-self: center;
 
                 h2 {
+                    text-align: center;
                     font-size: 1.4rem;
                 }
                 p {
+                    text-align: center;
+
                     font-size: 1.2rem;
                 }
             }
         }
     }
+
+    #p-main {
+
+        #skillset-card-wrapper {
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .skill-card {
+                max-width: 330px;
+                width: 85%;
+                border-radius: 10px;
+            }
+
+            .skill-stripe {
+                border-radius: 10px;
+                max-width: 900px;
+
+            }
+        }
+
+        #connect-section {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+
+            form {
+              textarea, input {
+                border-radius: 8px;
+                padding: 10px;
+              }
+              
+              textarea {
+                resize: none;
+              }
+
+              .form-control {
+                align-items: center;
+              }
+              .submit-control {
+                button {
+                    width: max-content;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                }
+              }
+
+
+                
+            }
+        }
+
+        .portfolio-item {
+            max-width: 900px;
+            width: 85%;
+            margin: auto;
+            padding: 35px;
+            border-radius: 14px;
+
+            
+
+            img {
+                max-width: 700px;
+                width: 80%;
+                margin: auto;
+
+            }
+        }
+        
+    }
+
+
+    #p-footer {
+        text-align: center;
+        font-size: 1.3rem;
+
+    }
+
   }

@@ -21,6 +21,8 @@ h1, h2, h4 {
 
 // end global styles ---------------------------------
 
+
+
 // global styling -----------------------------------------
 
 #g-container {
@@ -64,9 +66,89 @@ h1, h2, h4 {
               font-size: 1.2rem;
           }
       }
+    }  
+  }
+
+  #p-main {
+
+    background-color: white;
+
+    h2 {
+      font-size: 1.6rem;
+      color: $dark-blue-1;
+      text-align: center;
     }
 
+    .main-section-title, .card-title {
+      color: $dark-blue-1;
+    }
+
+    .main-section-title {
+      font-size: 1.3rem;
+    }
+
+    .main-section-title {
+     text-align: center;     
+    }
+    .card-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .card-description {
+      font-size: 1.10rem;
+      color: black;
+      text-align: justify;
+    }
+
+    .card-logo {
+      color: $dark-blue-1;
+    }
+
+    #connect-section {
+
+      form {
         
+          textarea, input, label, button {
+              font-size: 1.3rem;
+          }
+
+          textarea, input {
+            border: $dark-blue-1 solid 2px;
+            
+          }
+
+          .submit-control {
+            button {
+              background-color: $dark-blue-1;
+              color: white;
+            }
+          }
+      }
+    }
+
+    .portfolio-item {
+      border: 2px solid $dark-blue-1;
+
+      h4 {
+          text-align: center;
+          color: $dark-blue-1;
+          font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.18rem;
+      }
+
+      
+  }
+
+
+
+  }
+
+  #p-footer {
+    color: black;
   }
 
 }
@@ -74,166 +156,98 @@ h1, h2, h4 {
 // end global layout -----------------------------------------
 
 
-// * {
-//   padding: 0;
-//   margin: 0;
-//   font-family: "Open Sans", "Roboto", sans-serif;
-// }
-
-// .stop-scrolling {
-//   height: 100%;
-//   overflow: hidden;
-// }
-
-// .flex-row {
-//   display: flex;
-//   flex-direction: row;
-// }
-
-// .flex-column {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .flex-gap-35 {
-//   gap: 35px;
-// } 
-
-// .flex-gap-20 {
-//   gap: 20px;
-// }
-
-// .flex-wrap {
-//   flex-wrap: wrap;
-// }
-
-
-// .flex-nowrap {
-//   flex-wrap: nowrap;
-// }
-
-
-
-// // margin left for the animations
-// .m-left-25px {
-//   padding-left: 25px;
-// }
-
-// .bg-beige {
-//   background-color: $beige-1;
-// }
-
-// .border-round-orange {
-//   border: $orange-2 solid 3px;
-//   border-radius: 15px;
-// }
-
-// .border-round-grey {
-//   border: $grey-3 solid 3px;
-//   border-radius: 15px;
-
-
-// }
-
-// .text-orange {
-//   color: $orange-2;
-// }
-
-// h6 {
-//   font-size: 1.0rem;
-// }
-
-// h4 {
-//   font-size: 1.3rem;
-// }
-
-// h2 {
-//   font-size: 1.8rem;
-// }
-
-
-// // local imports
-// #g-container {
-//   max-width: 100vw;
-//   min-height: 100%;
-  
-//   #p-nav {
-//     justify-content: space-between;
-//     height: 80px;
-//     align-items: center;
-
-
-
-//     h1 {
-//       font-family: "Raleway", sans-serif;
-//       font-size: 1.5rem;
-//       padding-left: 45px;
-//     }
+// color theme
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  #g-container {
+      background-color: $grey-3;
+      
+      #top-header {
     
-//     .menu-icon-container {
-//       width: 25px;
-//       height: 25px;
-//       padding-right: 35px;
-//       visibility: hidden;
+        #p-nav {
+          
+          #site-title {
+            color: $orange-1;
+          }
+          
+          #nav-menu {
+            li {
+              a {
+                color: $orange-1;
+              }
+            }
+          }
+        }
+                
+    
+        #header-intro {
+          div {
+            h2 {
+              color: $orange-1;
+            }
 
-//       @media #{$media-q-mobile} {
-//         visibility: visible;
-//       }
-//     }
+            p {
+              color: $grey-1;
+            }
+          }
+        }
 
-//     ul {
-//       gap: 30px;
-//       list-style: none;
-//       margin-right: 35px;
-      
-//       li a {
-//         color: $orange-2;
-//         font-weight: 700;
-//         font-size: 1.2rem;
-//         text-decoration: none;
-
-//         & a:hover {
-//           font-size: 1.27rem;
-//         }
-//       }
-//     }
-
-//     .menu-big-screen {
-      
-//       @media #{$media-q-mobile} {
-//         display: none;
-//       }
-//     }
-
-//     .menu-mobile {
-//       display: block;
-//       background-color: $grey-1;
-//       border: 2px $grey-2 solid;
-//       position:absolute;
-//       top: 80px;
-//       right: 0px;
-//       margin-right: 0;
-      
-//       :not(:last-child) {
-//         border-bottom: 2px $grey-2 solid;
-//       }
-      
-//       li {
-//         padding: 10px;
         
-//       }
+      }
 
-//     }
+      #p-main {
+        background-color: $grey-3;
 
+        
+
+        .main-section-title, .card-title {
+          color: $orange-1;
+        }
     
-//   }
-
-
-//   #p-footer {
+        .card-description {
+          color: white;
+        }
     
-//     text-align: center;
-//     padding: 20px 0;
-//   }
-// }
+        .skill-card, .skill-stripe {
+          background-color: $grey-2;
+        }
 
+        .card-logo {
+          color: $orange-1;
+        }
 
+        #connect-section {
+
+        form {
+          
+          label {
+            color: $grey-1;
+
+          }
+
+          textarea, input {
+            background-color: $grey-2;
+            border: 2px $grey-1 solid;
+            color: white;
+          }
+
+          .submit-control {
+            button {
+              background-color: $orange-1;
+              color: black;
+            }
+          }
+        }
+
+        
+
+      }
+
+    }
+
+    #p-footer {
+      color: $grey-1;
+    }
+      
+  }
+}

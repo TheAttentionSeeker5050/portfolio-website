@@ -32,7 +32,7 @@ h1, h2, h4 {
 }
 
 #g-container {
-  background-color: #f0f0ee;
+  background-color: #e5e5e2;
 }
 #g-container #top-header #p-nav #site-title {
   font-size: 1.6rem;
@@ -55,6 +55,108 @@ h1, h2, h4 {
 }
 #g-container #top-header #header-intro div p {
   font-size: 1.2rem;
+}
+#g-container #p-main {
+  background-color: white;
+}
+#g-container #p-main h2 {
+  font-size: 1.6rem;
+  color: #2f5f7e;
+  text-align: center;
+}
+#g-container #p-main .main-section-title, #g-container #p-main .card-title {
+  color: #2f5f7e;
+}
+#g-container #p-main .main-section-title {
+  font-size: 1.3rem;
+}
+#g-container #p-main .main-section-title {
+  text-align: center;
+}
+#g-container #p-main .card-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#g-container #p-main .card-description {
+  font-size: 1.1rem;
+  color: black;
+  text-align: justify;
+}
+#g-container #p-main .card-logo {
+  color: #2f5f7e;
+}
+#g-container #p-main #connect-section form textarea, #g-container #p-main #connect-section form input, #g-container #p-main #connect-section form label, #g-container #p-main #connect-section form button {
+  font-size: 1.3rem;
+}
+#g-container #p-main #connect-section form textarea, #g-container #p-main #connect-section form input {
+  border: #2f5f7e solid 2px;
+}
+#g-container #p-main #connect-section form .submit-control button {
+  background-color: #2f5f7e;
+  color: white;
+}
+#g-container #p-main .portfolio-item {
+  border: 2px solid #2f5f7e;
+}
+#g-container #p-main .portfolio-item h4 {
+  text-align: center;
+  color: #2f5f7e;
+  font-size: 1.3rem;
+}
+#g-container #p-main .portfolio-item p {
+  font-size: 1.18rem;
+}
+#g-container #p-footer {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  #g-container {
+    background-color: #343a40;
+  }
+  #g-container #top-header #p-nav #site-title {
+    color: #ffbe0b;
+  }
+  #g-container #top-header #p-nav #nav-menu li a {
+    color: #ffbe0b;
+  }
+  #g-container #top-header #header-intro div h2 {
+    color: #ffbe0b;
+  }
+  #g-container #top-header #header-intro div p {
+    color: #e5e5e2;
+  }
+  #g-container #p-main {
+    background-color: #343a40;
+  }
+  #g-container #p-main .main-section-title, #g-container #p-main .card-title {
+    color: #ffbe0b;
+  }
+  #g-container #p-main .card-description {
+    color: white;
+  }
+  #g-container #p-main .skill-card, #g-container #p-main .skill-stripe {
+    background-color: #6c757d;
+  }
+  #g-container #p-main .card-logo {
+    color: #ffbe0b;
+  }
+  #g-container #p-main #connect-section form label {
+    color: #e5e5e2;
+  }
+  #g-container #p-main #connect-section form textarea, #g-container #p-main #connect-section form input {
+    background-color: #6c757d;
+    border: 2px #e5e5e2 solid;
+    color: white;
+  }
+  #g-container #p-main #connect-section form .submit-control button {
+    background-color: #ffbe0b;
+    color: black;
+  }
+  #g-container #p-footer {
+    color: #e5e5e2;
+  }
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/main.scss ***!
@@ -82,6 +184,10 @@ h1, h2, h4 {
   flex-wrap: nowrap;
 }
 
+.gap-15 {
+  gap: 15px;
+}
+
 .gap-25 {
   gap: 25px;
 }
@@ -98,12 +204,20 @@ h1, h2, h4 {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .justify-around {
   justify-content: space-around;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-top {
+  justify-content: flex-start;
 }
 
 .padding-y-20 {
@@ -132,14 +246,13 @@ h1, h2, h4 {
 #g-container #top-header {
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px;
+  max-width: 1000px;
   width: 90%;
 }
 #g-container #top-header #p-nav #nav-menu {
   list-style: none;
 }
 #g-container #top-header #header-intro {
-  position: relative;
   min-height: max-content;
 }
 #g-container #top-header #header-intro img {
@@ -147,13 +260,64 @@ h1, h2, h4 {
   max-width: 400px;
 }
 #g-container #top-header #header-intro div {
-  position: absolute;
-  top: 45%;
-  left: 10%;
+  align-self: center;
 }
 #g-container #top-header #header-intro div h2 {
+  text-align: center;
   font-size: 1.4rem;
 }
 #g-container #top-header #header-intro div p {
+  text-align: center;
   font-size: 1.2rem;
+}
+#g-container #p-main #skillset-card-wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#g-container #p-main #skillset-card-wrapper .skill-card {
+  max-width: 330px;
+  width: 85%;
+  border-radius: 10px;
+}
+#g-container #p-main #skillset-card-wrapper .skill-stripe {
+  border-radius: 10px;
+  max-width: 900px;
+}
+#g-container #p-main #connect-section {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+#g-container #p-main #connect-section form textarea, #g-container #p-main #connect-section form input {
+  border-radius: 8px;
+  padding: 10px;
+}
+#g-container #p-main #connect-section form textarea {
+  resize: none;
+}
+#g-container #p-main #connect-section form .form-control {
+  align-items: center;
+}
+#g-container #p-main #connect-section form .submit-control button {
+  width: max-content;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+#g-container #p-main .portfolio-item {
+  max-width: 900px;
+  width: 85%;
+  margin: auto;
+  padding: 35px;
+  border-radius: 14px;
+}
+#g-container #p-main .portfolio-item img {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+}
+#g-container #p-footer {
+  text-align: center;
+  font-size: 1.3rem;
 }
