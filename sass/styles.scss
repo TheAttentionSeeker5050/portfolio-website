@@ -52,7 +52,7 @@ p {
 
 
 
-// global styling -----------------------------------------
+// global layour -----------------------------------------
 
 #g-container {
   
@@ -123,13 +123,15 @@ p {
       form {
         
           textarea, input, label, button {
-              font-size: 1.3rem;
+            font-size: 1.3rem;
           }
-
+          
           textarea, input {
             border: $dark-blue-1 solid 2px;
-            
+            background-color: white;
           }
+
+          
 
           .submit-control {
             button {
