@@ -4,7 +4,6 @@
 
 
 ## Content
-<hr>
 <br>
 
 
@@ -20,7 +19,6 @@ The projects page showcases some of my recent projects, including web applicatio
 <br>
 
 ## Tech Stack
-<hr>
 <br>
 
 - Webpack
